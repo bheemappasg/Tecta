@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[welcome]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-07-14T21:35:16 IST" name="Default suite" finished-at="2024-07-14T21:35:16 IST" duration-ms="65">
+    <groups>
+    </groups>
+    <test started-at="2024-07-14T21:35:16 IST" name="Default test" finished-at="2024-07-14T21:35:16 IST" duration-ms="65">
+      <class name="com.tect.testscript.loginpage">
+        <test-method signature="login()[pri:0, instance:com.tect.testscript.loginpage@4efbca5a]" started-at="2024-07-14T21:35:16 IST" name="login" finished-at="2024-07-14T21:35:16 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[welcome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.tect.testscript.loginpage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
