@@ -7,14 +7,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.openqa.selenium.support.ui.Select;
 
 public class T {
 
-	public static void main(String[] args, Duration duration) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {
 		int t3= 1000;
-          WebDriver d = new FirefoxDriver();
+          WebDriver d = new ChromeDriver();
           d.manage().window().maximize();
           d.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
           d.get("http://192.168.230.128:8080/crm/ShowHomePage.do");        Thread.sleep(t3);
@@ -32,7 +32,7 @@ public class T {
                      s1.selectByVisibleText("Advertisement");        Thread.sleep(t3);
             WebElement   t1=d.findElement(By.name("property(Status)"));     Thread.sleep(t3);
                      Select s2 = new Select(t1);                               Thread.sleep(t3);
-                     s1.selectByVisibleText("Active");                     Thread.sleep(t3);
+                     s2.selectByVisibleText("Active");                     Thread.sleep(t3);
                      d.findElement(By.name("property(End Date)")).sendKeys("07/20/2024"); Thread.sleep(t3);
                      d.findElement(By.name("property(Budgeted Cost)")).sendKeys("200000");  Thread.sleep(t3);
                      d.findElement(By.name("property(Expected Response)")).sendKeys("150"); Thread.sleep(t3);
